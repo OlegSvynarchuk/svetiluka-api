@@ -4,7 +4,7 @@ const router = express.Router({mergeParams: true})
 
 router.get('/api/catalogue/:category/:id',  async (req, res) => {
     try {
-        const icon = await icons.findOne({id: req.params.id})
+        const icon = await icons.findOne({id: req.params.id, categories: req.params.category})
         res.send(icon)
     } catch (error) {
         res.status(500).send('server error')

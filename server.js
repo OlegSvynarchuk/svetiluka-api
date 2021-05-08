@@ -62,5 +62,5 @@ app.use((error, req, res, next) => {
     })
 })
 
-const port = process.env.port ||  3001
-app.listen(port, function() {console.log(`app started on port ${port}`)})
+const port = process.env.PORT ||  3001
+app.listen(PORT, function() {console.log(`app started on port ${PORT}`)})

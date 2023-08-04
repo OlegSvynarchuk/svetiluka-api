@@ -8,7 +8,7 @@
     "npm": "6.7"
     },
   "scripts": {
-    "start": "node -w server.js -w .env server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "oleg",
